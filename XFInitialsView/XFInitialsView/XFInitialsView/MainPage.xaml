@@ -3,15 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:XFInitialsView.Controls"
              mc:Ignorable="d"
              Visual="Material"
              x:Class="XFInitialsView.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Spacing="12"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center">
+
+        <controls:InitialsView WidthRequest="250"
+                               HeightRequest="250"
+                               Name="{Binding Text, Source={x:Reference NameEntry}}" />
+
+        <Entry x:Name="NameEntry"
+               Placeholder="Name" />
+
     </StackLayout>
 
 </ContentPage>
