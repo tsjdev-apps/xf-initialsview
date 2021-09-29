@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFInitialsView.Controls.InitialsView">
+
+    <ContentView.Content>
+        <Grid>
+            <BoxView x:Name="ContentBoxView"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center" />
+            <Label x:Name="ContentLabel"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+        </Grid>
+    </ContentView.Content>
+
+</ContentView>
